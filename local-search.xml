@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>这是我第一次尝试建的个人网站，这是我在此发表的第一篇文章</title>
+    <link href="/2024/03/11/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <url>/2024/03/11/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    
+    <content type="html"><![CDATA[<p>这是我第一次建的网站，希望大家能够支持我。💕<br>想了解更多信息的话可以点击顶部导航栏，好了，我没有什么要说的了。<br>😊</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/03/11/hello-world/"/>
     <url>/2024/03/11/hello-world/</url>
@@ -24,7 +37,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h1 id="你好呀！"><a href="#你好呀！" class="headerlink" title="你好呀！"></a>你好呀！</h1><p>我是徐政诚（Zhengcheng Xu）<br>男，2005年4月25日出生</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="你好呀！"><a href="#你好呀！" class="headerlink" title="你好呀！"></a>你好呀！</h1><h2 id="我是徐政诚（Zhengcheng-Xu）"><a href="#我是徐政诚（Zhengcheng-Xu）" class="headerlink" title="我是徐政诚（Zhengcheng Xu）  "></a>我是徐政诚（Zhengcheng Xu）  </h2><p>男，2005年4月25日出生在江苏南京<br>目前在<a href="www.wxit.edu.cn">无锡职业技术学院</a>就读电子商务专业，<br>我在业余时间喜欢捣鼓菜鸡的技术，研究小程序，喜欢偷懒、刷小聪明，<br>另外，我的爱好还有唱歌和慢跑、散步。 </p><blockquote><p>如果，你想和我交个朋友的话，这边是我的联系方式：<br>Tel：+86 18551732750<br>Email：<a href="mailto:&#x6e;&#x69;&#x63;&#111;&#99;&#97;&#116;&#120;&#x7a;&#99;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">&#x6e;&#x69;&#x63;&#111;&#99;&#97;&#116;&#120;&#x7a;&#99;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;</a><br>Bilibili：<a href="https://space.bilibili.com/413110087">兰啦罗</a><br>Facebook：<a href="https://www.facebook.com/nicocatxzc">Nico Cat</a><br>Twitter：<a href="https://twitter.com/nicocatxzc">@nicocat</a></p></blockquote><p>投喂方式：<br><img src="/alipay.jpg" alt="支付宝"><br><img src="/wechatpay.png" alt="微信支付"></p>]]></content>
     
   </entry>
   
