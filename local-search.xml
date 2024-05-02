@@ -4,24 +4,11 @@
   
   
   <entry>
-    <title>关于域名</title>
-    <link href="/2024/05/01/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D/"/>
-    <url>/2024/05/01/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于域名"><a href="#关于域名" class="headerlink" title="关于域名"></a>关于域名</h1><blockquote><p>您可以通过以下链接访问我的网站：<br>&lt;nicocat.cc&gt;<br>&lt;nicocat.pages.dev&gt;<br>&lt;nicocatxzc.github.io&gt;  </p></blockquote><p>感谢您的关注！😄</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>作品集</title>
     <link href="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
     <url>/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的作品集"><a href="#我的作品集" class="headerlink" title="我的作品集  "></a>我的作品集  </h1><h2 id="1-自调ai音乐"><a href="#1-自调ai音乐" class="headerlink" title="1.自调ai音乐"></a>1.自调ai音乐</h2><blockquote>        <div id="aplayer-vbGiIsHx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-vbGiIsHx"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "猫尾草",              author: "花铃、诺亚",              url: "猫尾草0.7x.mp3",              pic: "/2024/03/27/作品集/cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>  </blockquote><h2 id="2-方老师写真集"><a href="#2-方老师写真集" class="headerlink" title="2.方老师写真集"></a>2.方老师写真集</h2><blockquote><p><img src="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/%E6%A2%A6%E4%B8%AD%E6%83%85%E4%BA%BA.png" alt="我家方老师不可能这么帅！"></p></blockquote><h2 id="3-王佳鹏写真集"><a href="#3-王佳鹏写真集" class="headerlink" title="3.王佳鹏写真集"></a>3.王佳鹏写真集</h2><blockquote><p><img src="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/%E8%A5%BF%E9%83%A8%E7%89%9B%E4%BB%94.png" alt="西部牛仔"></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的作品集"><a href="#我的作品集" class="headerlink" title="我的作品集  "></a>我的作品集  </h1><h2 id="1-自调ai音乐"><a href="#1-自调ai音乐" class="headerlink" title="1.自调ai音乐"></a>1.自调ai音乐</h2><blockquote>        <div id="aplayer-NFMoqjjo" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-NFMoqjjo"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "猫尾草",              author: "花铃、诺亚",              url: "猫尾草0.7x.mp3",              pic: "/2024/03/27/作品集/cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>  </blockquote><h2 id="2-方老师写真集"><a href="#2-方老师写真集" class="headerlink" title="2.方老师写真集"></a>2.方老师写真集</h2><blockquote><p><img src="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/%E6%A2%A6%E4%B8%AD%E6%83%85%E4%BA%BA.png" alt="我家方老师不可能这么帅！"></p></blockquote><h2 id="3-王佳鹏写真集"><a href="#3-王佳鹏写真集" class="headerlink" title="3.王佳鹏写真集"></a>3.王佳鹏写真集</h2><blockquote><p><img src="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/%E8%A5%BF%E9%83%A8%E7%89%9B%E4%BB%94.png" alt="西部牛仔"></p></blockquote>]]></content>
     
     
     <categories>
@@ -46,7 +33,7 @@
     <link href="/2024/03/13/%E6%96%B9%E8%80%81%E5%B8%88%E6%A1%A3%E6%A1%88%E9%A6%86/"/>
     <url>/2024/03/13/%E6%96%B9%E8%80%81%E5%B8%88%E6%A1%A3%E6%A1%88%E9%A6%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="方老师档案馆"><a href="#方老师档案馆" class="headerlink" title="方老师档案馆"></a>方老师档案馆</h1><p>此处征集方老师的趣闻轶事，如果您有什么好的想法或建议，欢迎向我投稿！ </p><p>联系我：无锡职业技术学院 开源创新创业学院 电子商务系 云商23321班 徐政诚</p><p>投稿邮箱：<a href="mailto:&#110;&#105;&#x63;&#x6f;&#x63;&#x61;&#116;&#x78;&#x7a;&#99;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#x6d;">&#110;&#105;&#x63;&#x6f;&#x63;&#x61;&#116;&#x78;&#x7a;&#99;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#x6d;</a></p><h2 id="稿件"><a href="#稿件" class="headerlink" title="稿件:"></a>稿件:</h2><ol><li>方老师正在偷偷玩手机<br><img src="/2024/03/13/%E7%85%A7%E7%89%87%E5%A2%99/%E6%96%B9.jpg" alt="方老师"></li></ol><p>2.方老师正在认真玩游戏<br><img src="/2024/03/13/%E6%96%B9%E8%80%81%E5%B8%88%E6%A1%A3%E6%A1%88%E9%A6%86/playgames1.jpg" alt="方老师"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="方老师档案馆"><a href="#方老师档案馆" class="headerlink" title="方老师档案馆"></a>方老师档案馆</h1><p>此处征集方老师的趣闻轶事，如果您有什么好的想法或建议，欢迎向我投稿！ </p><p>联系我：无锡职业技术学院 开源创新创业学院 电子商务系 云商23321班 徐政诚</p><p>投稿邮箱：<a href="mailto:&#x6e;&#105;&#x63;&#111;&#x63;&#x61;&#116;&#120;&#x7a;&#99;&#x40;&#x31;&#54;&#51;&#46;&#99;&#111;&#109;">&#x6e;&#105;&#x63;&#111;&#x63;&#x61;&#116;&#120;&#x7a;&#99;&#x40;&#x31;&#54;&#51;&#46;&#99;&#111;&#109;</a></p><h2 id="稿件"><a href="#稿件" class="headerlink" title="稿件:"></a>稿件:</h2><ol><li>方老师正在偷偷玩手机<br><img src="/2024/03/13/%E7%85%A7%E7%89%87%E5%A2%99/%E6%96%B9.jpg" alt="方老师"></li></ol><p>2.方老师正在认真玩游戏<br><img src="/2024/03/13/%E6%96%B9%E8%80%81%E5%B8%88%E6%A1%A3%E6%A1%88%E9%A6%86/playgames1.jpg" alt="方老师"></p>]]></content>
     
     
     <categories>
@@ -92,9 +79,22 @@
   
   
   <entry>
+    <title>关于域名</title>
+    <link href="/2023/10/01/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D/"/>
+    <url>/2023/10/01/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于域名"><a href="#关于域名" class="headerlink" title="关于域名"></a>关于域名</h1><blockquote><p>您可以通过以下链接访问我的网站：<br>&lt;nicocat.cc&gt;<br>&lt;nicocat.pages.dev&gt;<br>&lt;nicocatxzc.github.io&gt;  </p></blockquote><p>感谢您的关注！😄</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>这是我第一次尝试建的个人网站，这是我在此发表的第一篇文章</title>
-    <link href="/2024/03/11/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <url>/2024/03/11/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <link href="/2023/10/01/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <url>/2023/10/01/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是我第一次建的网站，希望大家能够支持我。💕    </p><p>本网站使用<a href="https://hexo.io/index.html">Hexo</a>构建，均为静态页面，目前不支持交互。<br>本网站目前由<a href="https://pages.github.com/">Github pages</a>托管，感谢Github能给予免费发布的机会！  </p><p>想了解更多信息的话可以点击顶部导航栏，感谢您的到访！😊</p>]]></content>
     
@@ -106,8 +106,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2024/03/11/hello-world/"/>
-    <url>/2024/03/11/hello-world/</url>
+    <link href="/2023/10/01/hello-world/"/>
+    <url>/2023/10/01/hello-world/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -125,7 +125,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/about/av3.png"><img src="/about/av1.png"><img src="/about/av2.png">  </p><h1 id="你好呀！"><a href="#你好呀！" class="headerlink" title="你好呀！"></a>你好呀！</h1><h2 id="我是-Nicocat"><a href="#我是-Nicocat" class="headerlink" title="我是 Nicocat !  "></a>我是 Nicocat !  </h2><p>本名徐政诚（Zhengcheng Xu),<br>男，2005年4月25日出生在江苏南京<br>目前在<a href="www.wxit.edu.cn">无锡职业技术学院</a>开源创新创业学院就读电子商务专业，<br>我在业余时间喜欢研究计算机应用，还喜欢偷懒。<br>另外，我的爱好还有唱歌和慢跑、散步。 </p><blockquote><p>如果，你想和我交个朋友的话😄，这边是我的联系方式：<br>Tel：+86 185********<br>Email：<a href="mailto:&#x6e;&#105;&#99;&#111;&#x63;&#97;&#x74;&#x78;&#122;&#99;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#109;">&#x6e;&#105;&#99;&#111;&#x63;&#97;&#x74;&#x78;&#122;&#99;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#109;</a><br>Bilibili：<a href="https://space.bilibili.com/413110087">兰啦罗</a><br>Facebook：<a href="https://www.facebook.com/nicocatxzc">Nico Cat</a><br>Twitter：<a href="https://twitter.com/nicocatxzc">@nicocat</a></p></blockquote><p>投喂方式：<br><img src="/about/alipay.jpg" alt="支付宝"><img src="/about/wechatpay.png" alt="微信支付"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/about/av3.png"><img src="/about/av1.png"><img src="/about/av2.png">  </p><h1 id="你好呀！"><a href="#你好呀！" class="headerlink" title="你好呀！"></a>你好呀！</h1><h2 id="我是-Nicocat"><a href="#我是-Nicocat" class="headerlink" title="我是 Nicocat !  "></a>我是 Nicocat !  </h2><p>本名徐政诚（Zhengcheng Xu),<br>男，2005年4月25日出生在江苏南京<br>目前在<a href="www.wxit.edu.cn">无锡职业技术学院</a>开源创新创业学院就读电子商务专业，<br>我在业余时间喜欢研究计算机应用，还喜欢偷懒。<br>另外，我的爱好还有唱歌和慢跑、散步。 </p><blockquote><p>如果，你想和我交个朋友的话😄，这边是我的联系方式：<br>Tel：+86 185********<br>Email：<a href="mailto:&#110;&#105;&#x63;&#x6f;&#99;&#97;&#116;&#120;&#122;&#99;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#110;&#105;&#x63;&#x6f;&#99;&#97;&#116;&#120;&#122;&#99;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a><br>Bilibili：<a href="https://space.bilibili.com/413110087">兰啦罗</a><br>Facebook：<a href="https://www.facebook.com/nicocatxzc">Nico Cat</a><br>Twitter：<a href="https://twitter.com/nicocatxzc">@nicocat</a></p></blockquote><p>投喂方式：<br><img src="/about/alipay.jpg" alt="支付宝"><img src="/about/wechatpay.png" alt="微信支付"></p>]]></content>
     
   </entry>
   
