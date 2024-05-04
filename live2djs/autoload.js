@@ -25,9 +25,26 @@ function loadExternalResource(url, type) {
 }
 
 // 加载 waifu.css live2d.min.js waifu-tips.js
-if (screen.width >= 64) {
+if (screen.width >= 768) {
 	Promise.all([
 		loadExternalResource(live2d_path + "waifu.css", "css"),
+		loadExternalResource(live2d_path + "live2d.min.js", "js"),
+		loadExternalResource(live2d_path + "waifu-tips.js", "js")
+	]).then(() => {
+		// 配置选项的具体用法见 README.md
+		initWidget({
+			waifuPath: live2d_path + "waifu-tips.json",
+			//apiPath: "https://live2d.fghrsh.net/api/",
+			cdnPath: "/live2djs/",
+			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+		});
+	});
+}
+
+// 加载 waifu.css live2d.min.js waifu-tips-.js，适配移动端
+if (screen.width < 768) {
+	Promise.all([
+		loadExternalResource(live2d_path + "waifu-mobie.css", "css"),
 		loadExternalResource(live2d_path + "live2d.min.js", "js"),
 		loadExternalResource(live2d_path + "waifu-tips.js", "js")
 	]).then(() => {
