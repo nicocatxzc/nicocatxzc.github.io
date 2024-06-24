@@ -2,6 +2,132 @@
  * Live2D Widget
  * https://github.com/stevenjoezhang/live2d-widget
  */
+const openIndexedDB = () => {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open('fileStorageDB', 1);
+        
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            db.createObjectStore('files', { keyPath: 'key' });
+        };
+
+        request.onsuccess = (event) => {
+            resolve(event.target.result);
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
+        };
+    });
+};
+
+const storeFileInDB = (db, key, blob) => {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction(['files'], 'readwrite');
+        const store = transaction.objectStore('files');
+        const request = store.put({ key, blob });
+
+        request.onsuccess = () => {
+            resolve();
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
+        };
+    });
+};
+
+const getFileFromDB = (db, key) => {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction(['files'], 'readonly');
+        const store = transaction.objectStore('files');
+        const request = store.get(key);
+
+        request.onsuccess = (event) => {
+            resolve(event.target.result ? event.target.result.blob : null);
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
+        };
+    });
+};
+
+const clearIndexedDB = (db) => {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction(['files'], 'readwrite');
+        const store = transaction.objectStore('files');
+        const request = store.clear();
+
+        request.onsuccess = () => {
+            resolve();
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
+        };
+    });
+};
+
+const checkDBSizeAndClear = async (db, maxSizeMB) => {
+    const transaction = db.transaction(['files'], 'readonly');
+    const store = transaction.objectStore('files');
+
+    return new Promise((resolve, reject) => {
+        let totalSize = 0;
+        store.openCursor().onsuccess = async (event) => {
+            const cursor = event.target.result;
+            if (cursor) {
+                totalSize += cursor.value.blob.size;
+                cursor.continue();
+            } else {
+                if (totalSize > maxSizeMB * 1024 * 1024) {
+                    await clearIndexedDB(db);
+                }
+                resolve();
+            }
+        };
+
+        store.openCursor().onerror = (event) => {
+            reject(event.target.error);
+        };
+    });
+};
+
+const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
+    const db = await openIndexedDB();
+    await checkDBSizeAndClear(db, maxSizeMB);
+
+    const processFile = async (obj) => {
+        for (let key in obj) {
+            if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.png'))) {
+                let uuid = null;
+                const filePath = `${cdnPath}model/${s}/${obj[key]}`;
+                const fileName = obj[key];
+
+                let blob = await getFileFromDB(db, fileName);
+                if (!blob) {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error(`Failed to fetch ${fileName}`);
+                    }
+                    blob = new Blob([await response.blob()], { type: 'application/octet-stream' });
+                    await storeFileInDB(db, fileName, blob);
+                    console.log(`已存储${fileName}在`,blob)
+                }
+                uuid = URL.createObjectURL(blob).split('/').pop();
+                obj[key] = uuid;
+            } else if (typeof obj[key] === 'object') {
+                await processFile(obj[key]);
+            }
+        }
+    };
+
+    await processFile(indexData);
+    console.log(`已处理`,indexData)
+};
+
+//live2d
 !function() {
     "use strict";
     function e(e) {
@@ -40,39 +166,71 @@
             this.apiPath = t,
             this.cdnPath = o
         }
-        
         async loadModelList() {
             const e = await fetch(`${this.cdnPath}model_list.json`);
             this.modelList = await e.json()
-            console.log("模型列表：", this.modelList);
         }
-
         async loadModel(t, s, n) {
             // 检查localStorage中是否已缓存模型配置文件
-            //const cachedModelConfig = localStorage.getItem(`modelConfig-${t}`);
             const modelConfigUrl = localStorage.getItem(`modelConfigUrl`);
-            console.log(`${modelConfigUrl}`);
+            //console.log(`缓存的配置为：`,modelConfigUrl);
             if (modelConfigUrl) {
                 // 如果已缓存，直接使用缓存的配置文件加载模型
-                console.log(`加载缓存的配置：${modelConfigUrl}`);
-                loadlive2d("live2d", modelConfigUrl);
+                // 解析缓存的 JSON 字符串为对象
+                const indexData = JSON.parse(modelConfigUrl);
+
+                //console.log(`加载缓存的配置：`,modelConfigUrl);
+
+                processFiles(indexData, this.cdnPath, o).then(() => {
+                    // 创建修改后的 index.json 的 Blob 对象
+                    //console.log(`处理的配置为：`,indexData);
+                    const updatedBlob = new Blob([JSON.stringify(indexData)], { type: 'application/json' });
+                    const indexUrl = URL.createObjectURL(updatedBlob);
+                
+                    //console.log(indexUrl); // 确认生成的 indexUrl
+                
+                    // 调用构建后的 index.json
+                    console.log(`加载的配置为：`,`${indexUrl}`);
+                    loadlive2d("live2d",`${indexUrl}` );
+                    //load(indexUrl);
+                }).catch(error => {
+                    //console.error('Error processing files:', error);
+                });
+
+                //loadlive2d("live2d", updatedConfigUrl);
             } else {
                 // 如果未缓存，按原始方法创建
-                console.log(`按原始方法创建基础`);
+                
                 if (localStorage.setItem("modelId", t),
                 localStorage.setItem("modelTexturesId", s),
                 o(n, 4e3, 10),
                 this.useCDN) {
                     this.modelList || await this.loadModelList();
                     const o = e(this.modelList.models[t]);
-                    console.log(`加载角色：${o}`);
+                    //console.log(`加载角色：${o}`);
                     loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`)
                     const modelConfigUrl = `${this.cdnPath}model/${o}/index.json`;
                     localStorage.setItem(`modelConfigUrl`, modelConfigUrl);//保存模型配置
+                    console.log(`创建基础配置`,modelConfigUrl);
                 } else
-                    loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`),
-                    console.log(`Live2D 模型 ${t}-${s} 加载完成`)
+                    loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`)
+                    //console.log(`Live2D 模型 ${t}-${s} 加载完成`)
             }
+        //    if (localStorage.setItem("modelId", t),
+        //    localStorage.setItem("modelTexturesId", s),
+        //    o(n, 4e3, 10),
+        //    this.useCDN) {
+        //        this.modelList || await this.loadModelList();
+        //        const o = e(this.modelList.models[t]);
+        //        loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`)
+        //    } else
+        //        loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`),
+        //        console.log(`Live2D 模型 ${t}-${s} 加载完成`)
+        }
+
+        async fetchJSON(filePath) {
+            const response = await fetch(filePath);
+            return response.json();
         }
 
         async loadRandModel() {
@@ -99,58 +257,38 @@
                 const randomTexture = texturesData.textures[Math.floor(Math.random() * texturesData.textures.length)];
     
                 // 修改 index.json 的 textures 文件路径
-                indexData.textures = [randomTexture];
+                indexData.textures = [randomTexture]
 
-                // 验证Blob URL是否指向有效的文件对象
-                async function blobUrlExists(url) {
-                    return new Promise((resolve) => {
-                        const img = new Image();
-                        img.onload = () => resolve(true);
-                        img.onerror = () => resolve(false);
-                        img.src = url;
-                    });
-                }
-                // 递归函数来处理所有的 'file' 属性
-                const processFiles = async (obj) => {
-                    for (let key in obj) {
-                        if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.png'))) {
-                            // 检查localStorage中是否已有Blob URL
-                            const cachedBlobUrl = localStorage.getItem(obj[key]);
-                            console.log(`验证：${cachedBlobUrl}:`,blobUrlExists(cachedBlobUrl));
-                            if (await blobUrlExists(cachedBlobUrl)) {
-                                // 如果已有缓存，直接使用缓存的Blob URL
-                                obj[key] = cachedBlobUrl;
-                                console.log(`未下载：${cachedBlobUrl}`);
-                            } else {
-                                // 如果没有缓存，从服务器获取文件并创建Blob
-                                const response = await fetch(`${this.cdnPath}model/${s}/${obj[key]}`);
-                                if (!response.ok) {
-                                    throw new Error(`下载失败： ${obj[key]}`);
-                                }
-                                const blob = new Blob([await response.blob()], { type: 'application/octet-stream' });
-                                const uuid = URL.createObjectURL(blob).split('/').pop(); // 获取 UUID
-                                localStorage.setItem(obj[key], uuid); // 将Blob URL保存到localStorage
-                                console.log(`已下载：${obj[key]}`);
-                                obj[key] = uuid; // 用 blob 的 uuid 替换文件路径
-                            }
-                        } else if (typeof obj[key] === 'object') {
-                            await processFiles(obj[key]); // 递归处理对象属性
-                        }
-                    }
-                };
+                // 将更新后的 indexData 以 JSON 字符串形式存储在 localStorage 中
+                const updatedIndexJson = JSON.stringify(indexData);
+                localStorage.setItem(`modelConfigUrl`, updatedIndexJson);
+                console.log(`已保存修改后的配置`,updatedIndexJson);
 
-                await processFiles(indexData); // 处理 indexData
+                processFiles(indexData, this.cdnPath, s).then(() => {
+                    // 创建修改后的 index.json 的 Blob 对象
+                    //console.log(`处理的配置为：`,indexData);
+                    const updatedBlob = new Blob([JSON.stringify(indexData)], { type: 'application/json' });
+                    const indexUrl = URL.createObjectURL(updatedBlob);
+                
+                    console.log(indexUrl); // 确认生成的 indexUrl
+                
+                    // 调用构建后的 index.json
+                    //console.log(`加载的配置为：`,`${indexUrl}`);
+                    loadlive2d("live2d",`${indexUrl}` );
+                    //load(indexUrl);
+                }).catch(error => {
+                    //console.error('Error processing files:', error);
+                });
+
+                //console.log(`${this.cdnPath}`)
 
                 // 创建修改后的 index.json 的 Blob 对象
-                const updatedBlob = new Blob([JSON.stringify(indexData)], { type: 'application/json' });
-                const indexUrl = URL.createObjectURL(updatedBlob);
+                //const updatedBlob = new Blob([JSON.stringify(indexData)], { type: 'application/json' });
+                //const indexUrl = URL.createObjectURL(updatedBlob);
                 
-                // 修改 loadlive2d 方法调用构建后的 index.json
-                        loadlive2d("live2d",`${indexUrl}` );
-                        console.log(`配置目录：${indexUrl}`);
-                        const modelConfigUrl = `${indexUrl}`;
-                        localStorage.setItem(`modelConfigUrl`, modelConfigUrl);
-                        console.log(`已保存模型配置`);
+                // 调用构建后的 index.json
+                //loadlive2d("live2d",`${indexUrl}` );
+                //console.log(`${s}`);
             
 
                 o("我的新衣服好看嘛？", 4e3, 10)
@@ -165,10 +303,6 @@
             if (this.useCDN) {
                 this.modelList || await this.loadModelList();
                 const t = ++e >= this.modelList.models.length ? 0 : e;
-                //保存配置
-                const modelConfigUrl = `${this.cdnPath}model/${o}/index.json`;
-                localStorage.setItem(`modelConfig-${t}`, modelConfigUrl);
-                //断开
                 this.loadModel(t, 0, this.modelList.messages[t])
             } else
                 fetch(`${this.apiPath}switch/?id=${e}`).then((e=>e.json())).then((e=>{
