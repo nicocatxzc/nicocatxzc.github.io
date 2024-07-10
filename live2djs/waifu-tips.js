@@ -100,7 +100,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
 
     const processFile = async (obj) => {
         for (let key in obj) {
-            if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.png'))) {
+            if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.png')|| obj[key].endsWith('.json'))) {
                 let uuid = null;
                 const filePath = `${cdnPath}model/${s}/${obj[key]}`;
                 const fileName = obj[key];
@@ -214,7 +214,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                     console.log(`创建基础配置`,modelConfigUrl);
                 } else
                     loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`)
-                    //console.log(`Live2D 模型 ${t}-${s} 加载完成`)
+                    console.log(`Live2D 模型 ${t}-${s} 加载完成`)
             }
         //    if (localStorage.setItem("modelId", t),
         //    localStorage.setItem("modelTexturesId", s),
