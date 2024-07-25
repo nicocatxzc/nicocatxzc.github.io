@@ -124,7 +124,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
     };
 
     await processFile(indexData);
-    console.log(`已处理`,indexData)
+    console.log(`加载的配置为`,indexData)
 };
 
 //live2d
@@ -190,7 +190,8 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                     //console.log(indexUrl); // 确认生成的 indexUrl
                 
                     // 调用构建后的 index.json
-                    console.log(`加载的配置为：`,`${indexUrl}`);
+                    console.log(`加载的配置路径为：`,`${indexUrl}`);
+                    console.error(`java.lang.NoMoneyException: KFC Crazy Thursday whoever gives me\n$50, I will thank him.`)
                     loadlive2d("live2d",`${indexUrl}` );
                     //load(indexUrl);
                 }).catch(error => {
@@ -215,6 +216,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                 } else
                     loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`)
                     console.log(`Live2D 模型 ${t}-${s} 加载完成`)
+
             }
         //    if (localStorage.setItem("modelId", t),
         //    localStorage.setItem("modelTexturesId", s),
@@ -407,7 +409,8 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                       , n = {
                         baidu: "百度",
                         so: "360搜索",
-                        google: "谷歌搜索"
+                        google: "谷歌搜索",
+                        bing: "微软必应"
                     };
                     return location.hostname === e.hostname ? t : (o = s in n ? n[s] : e.hostname,
                     `Hello！来自 <span>${o}</span> 的朋友<br>${t}`)
