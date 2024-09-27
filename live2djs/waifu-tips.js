@@ -100,7 +100,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
 
     const processFile = async (obj) => {
         for (let key in obj) {
-            if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.png')|| obj[key].endsWith('.json'))) {
+            if (key.startsWith('file') || typeof obj[key] === 'string' && (obj[key].endsWith('.moc') || obj[key].endsWith('.mtn') || obj[key].endsWith('.png')|| obj[key].endsWith('.json'))) {
                 let uuid = null;
                 const filePath = `${cdnPath}model/${s}/${obj[key]}`;
                 const fileName = obj[key];
@@ -189,19 +189,15 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                 
                     //console.log(indexUrl); // 确认生成的 indexUrl
                 
-                    // 调用构建后的 index.json
+                    // 调用重构建后的 index.json
                     console.log(`加载的配置路径为：`,`${indexUrl}`);
-                    console.error(`java.lang.NoMoneyException: KFC Crazy Thursday whoever gives me\n$50, I will thank him.`)
+                    //console.error(`java.lang.NoMoneyException: KFC Crazy Thursday whoever gives me\n$50, I will thank him.`)
                     loadlive2d("live2d",`${indexUrl}` );
-                    //load(indexUrl);
                 }).catch(error => {
                     //console.error('Error processing files:', error);
                 });
-
-                //loadlive2d("live2d", updatedConfigUrl);
             } else {
                 // 如果未缓存，按原始方法创建
-                
                 if (localStorage.setItem("modelId", t),
                 localStorage.setItem("modelTexturesId", s),
                 o(n, 4e3, 10),
@@ -218,16 +214,6 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                     console.log(`Live2D 模型 ${t}-${s} 加载完成`)
 
             }
-        //    if (localStorage.setItem("modelId", t),
-        //    localStorage.setItem("modelTexturesId", s),
-        //    o(n, 4e3, 10),
-        //    this.useCDN) {
-        //        this.modelList || await this.loadModelList();
-        //        const o = e(this.modelList.models[t]);
-        //        loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`)
-        //    } else
-        //        loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`),
-        //        console.log(`Live2D 模型 ${t}-${s} 加载完成`)
         }
 
         async fetchJSON(filePath) {
@@ -241,9 +227,8 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
             if (this.useCDN) {
                 this.modelList || await this.loadModelList();
                 const s = e(this.modelList.models[t]);
-                
                 //loadlive2d("live2d", `${this.cdnPath}model/${s}/index.json`),
-                // Fetch and parse the JSON data
+                // 获取并解析配置文件
                 const texturesResponse = await fetch(`${this.cdnPath}model/${s}/textures.json`);
                 const indexResponse = await fetch(`${this.cdnPath}model/${s}/index.json`);
         
@@ -254,7 +239,6 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                 const texturesData = await texturesResponse.json();
                 const indexData = await indexResponse.json();
 
-    
                 // 随机抽取一个 textures 文件路径
                 const randomTexture = texturesData.textures[Math.floor(Math.random() * texturesData.textures.length)];
     
@@ -281,18 +265,7 @@ const processFiles = async (indexData, cdnPath, s, maxSizeMB = 200) => {
                 }).catch(error => {
                     //console.error('Error processing files:', error);
                 });
-
-                //console.log(`${this.cdnPath}`)
-
-                // 创建修改后的 index.json 的 Blob 对象
-                //const updatedBlob = new Blob([JSON.stringify(indexData)], { type: 'application/json' });
-                //const indexUrl = URL.createObjectURL(updatedBlob);
                 
-                // 调用构建后的 index.json
-                //loadlive2d("live2d",`${indexUrl}` );
-                //console.log(`${s}`);
-            
-
                 o("我的新衣服好看嘛？", 4e3, 10)
             } else
                 fetch(`${this.apiPath}rand_textures/?id=${t}-${s}`).then((e=>e.json())).then((e=>{
