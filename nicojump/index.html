@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <script>
+        window.onload = function() {
+            const queryString = window.location.search;
+            const queryParams = new URLSearchParams(queryString);
+            const path = queryParams.get('');
+
+            if (path) {
+                window.location.href = `https://nicocat.cc/${path}`;
+            } else {
+                window.location.href = 'https://nicocat.cc';
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

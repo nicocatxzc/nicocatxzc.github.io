@@ -3,6 +3,120 @@
   
   
   
+  <entry>
+    <title>电子商务实务期中作业</title>
+    <link href="/2030/05/13/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E5%AE%9E%E5%8A%A1%E6%9C%9F%E4%B8%AD%E4%BD%9C%E4%B8%9A/"/>
+    <url>/2030/05/13/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E5%AE%9E%E5%8A%A1%E6%9C%9F%E4%B8%AD%E4%BD%9C%E4%B8%9A/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="点击跳转展示页"><a href="#点击跳转展示页" class="headerlink" title="点击跳转展示页"></a>点击跳转展示页</h1><h2 id="电子商务实务期中设计"><a href="#电子商务实务期中设计" class="headerlink" title="电子商务实务期中设计"></a><a href="/show/%E5%9C%A8%E7%BA%BF%E8%AF%95%E8%A1%A3%E9%97%B4/cloth.html">电子商务实务期中设计</a></h2><blockquote><p><img src="/source/%E6%96%B9%E8%80%81%E5%B8%88%E6%A1%A3%E6%A1%88%E9%A6%86/fang3.png"></p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>live2d功能更新</title>
+    <link href="/2024/06/24/live2d%E6%9B%B4%E6%96%B0/"/>
+    <url>/2024/06/24/live2d%E6%9B%B4%E6%96%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="今天更新了live2d看板娘"><a href="#今天更新了live2d看板娘" class="headerlink" title="今天更新了live2d看板娘"></a>今天更新了live2d看板娘</h1><p><img src="/source/%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E4%BA%86lived%E7%9C%8B%E6%9D%BF%E5%A8%98/pio.png" alt="."></p><blockquote><p>使用localstorage+indexDB功能将配置存储在了用户浏览器，<br>实现了配置的持久存储，随机运算也由本地完成，从而实现了伪API功能</p></blockquote><blockquote><p>现在可以使用全部功能啦，再也不用访问undefined啦</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>站点信息</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>给网站添加了lived看板娘</title>
+    <link href="/2024/05/04/%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E4%BA%86lived%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <url>/2024/05/04/%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E4%BA%86lived%E7%9C%8B%E6%9D%BF%E5%A8%98/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="今天给站点添加了live2d看板娘"><a href="#今天给站点添加了live2d看板娘" class="headerlink" title="今天给站点添加了live2d看板娘"></a>今天给站点添加了<br>live2d看板娘</h1><p><img src="/source/%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E4%BA%86lived%E7%9C%8B%E6%9D%BF%E5%A8%98/pio.png" alt="."></p><blockquote><p>其实很早之前就有想法了，<br>不过因为不是相关专业的学生，<br>也没有怎么接触过相关知识，<br>就一直不了了之了。😓  </p></blockquote><blockquote><p>今天通过长达8小时的吃力解读，<br>成功通过自己认为可行的方式实现了这个功能，<br>当然，肯定有不少残缺的地方。<br>————————————————<br>比如切换装扮、角色之类的已经失效，<br>与原作同样貌似无法再移动端正常显示，<br>虽然按钮存在（我尝试过删除这部分块，但是代价是其他按钮全部失效😓<br>小辣鸡：以后再说吧））<br>期间尝试过直接借鉴大佬网站的代码，<br>不过凭借我相当白菜的水平，毫不意外均以失败告终。<br>————————————————<br>其实我完全可以直接只搬作者提供的那段javascript过来，<br>但是考虑到速度问题，<br>还有传闻相关托管平台已经停止了对部分区域的服务，<br>所以还是觉得自己提供的比较稳妥<br>（其实就是想删除其他形象，只留自己喜欢的🙈）</p></blockquote><p>累了，今天就先到这里吧。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>站点信息</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>作品集</title>
+    <link href="/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    <url>/2024/03/27/%E4%BD%9C%E5%93%81%E9%9B%86/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的作品集"><a href="#我的作品集" class="headerlink" title="我的作品集  "></a>我的作品集  </h1><h2 id="1-访问我在b站发布的水视频：兰啦罗的bilibili空间"><a href="#1-访问我在b站发布的水视频：兰啦罗的bilibili空间" class="headerlink" title="1.访问我在b站发布的水视频：兰啦罗的bilibili空间  "></a>1.访问我在b站发布的水视频：<a href="https://space.bilibili.com/413110087">兰啦罗的bilibili空间</a>  </h2><h2 id="2-自调ai音乐"><a href="#2-自调ai音乐" class="headerlink" title="2.自调ai音乐"></a>2.自调ai音乐</h2><blockquote>        <div id="aplayer-NTTTAjXl" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-NTTTAjXl"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "猫尾草",              author: "花铃、诺亚",              url: "猫尾草0.7x.mp3",              pic: "/2024/03/27/作品集/cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>  </blockquote><h2 id="3-方老师写真集"><a href="#3-方老师写真集" class="headerlink" title="3.方老师写真集"></a>3.方老师写真集</h2><blockquote><p><img src="/source/%E4%BD%9C%E5%93%81%E9%9B%86/%E6%A2%A6%E4%B8%AD%E6%83%85%E4%BA%BA.png" alt="我家方老师不可能这么帅！"></p></blockquote><h2 id="4-王佳鹏写真集"><a href="#4-王佳鹏写真集" class="headerlink" title="4.王佳鹏写真集"></a>4.王佳鹏写真集</h2><blockquote><p><img src="/source/%E4%BD%9C%E5%93%81%E9%9B%86/%E8%A5%BF%E9%83%A8%E7%89%9B%E4%BB%94.png" alt="西部牛仔"></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>作品</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>这是我第一次尝试建的个人网站，这是我在此发表的第一篇文章</title>
+    <link href="/2023/10/01/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <url>/2023/10/01/%E8%BF%99%E6%98%AF%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%BB%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8%E6%AD%A4%E5%8F%91%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是我第一次建的网站，希望大家能够支持我。💕    </p><blockquote><p>本网站使用<a href="https://hexo.io/index.html">Hexo</a>构建，均为静态页面，目前不支持交互。<br>本网站目前由<a href="https://pages.github.com/">Github pages</a>托管。  </p></blockquote><p>想了解更多信息的话可以点击顶部导航栏，感谢您的到访！😊</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>站点信息</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2023/10/01/hello-world/"/>
+    <url>/2023/10/01/hello-world/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>站点信息</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
   
   
