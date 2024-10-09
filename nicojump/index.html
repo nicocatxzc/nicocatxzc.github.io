@@ -8,17 +8,19 @@
         window.onload = function() {
             const queryString = window.location.search;
             const queryParams = new URLSearchParams(queryString);
-            const path = queryParams.get('');
+            const path = queryParams.get(''); // 查询资源位置
 
-            if (path) {
-                window.location.href = `https://nicocat.cc/${path}`;
-            } else {
-                window.location.href = 'https://nicocat.cc';
-            }
+            setTimeout(function() {
+                if (path) {
+                    window.location.href = `https://nicocat.cc/${path}`;
+                } else {
+                    window.location.href = 'https://nicocat.cc';
+                }
+            }, 1500); //等待资源加载
         }
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    <p>正在查询资源中，请稍后...</p>
 </body>
 </html>
