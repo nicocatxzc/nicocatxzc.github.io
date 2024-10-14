@@ -13,20 +13,16 @@
 
             setTimeout(function() {
                 if (site && path) {
-                    // 如果site参数为'file'，跳转到file.---.com
-                    if (site === 'file') {
-                        window.location.href = `https://file.---.com/${path}`;
-                    } else {
-                        // 其他site参数处理方式可以在此添加
-                    }
+                    // 根据site定义跳转到不同的子域名
+                    window.location.href = `https://${site}.nicocat.cc/${path}`;
                 } else if (path) {
-                    // 没有site参数时，跳转到默认域名
-                    window.location.href = `https://---.com/${path}`;
+                    // 没有site参数时跳转到默认的主域名
+                    window.location.href = `https://nicocat.cc/${path}`;
                 } else {
-                    // 默认跳转
-                    window.location.href = 'https://---.com';
+                    // 没有path参数时跳转到主域名首页
+                    window.location.href = 'https://nicocat.cc';
                 }
-            }, 1500); // 等待资源加载
+            }, 1500); // 等待1.5秒后跳转
         }
     </script>
 </head>
