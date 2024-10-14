@@ -8,15 +8,25 @@
         window.onload = function() {
             const queryString = window.location.search;
             const queryParams = new URLSearchParams(queryString);
-            const path = queryParams.get(''); // 查询资源位置
+            const site = queryParams.get('site'); // 获取site参数
+            const path = queryParams.get('path'); // 获取path参数
 
             setTimeout(function() {
-                if (path) {
-                    window.location.href = `https://nicocat.cc/${path}`;
+                if (site && path) {
+                    // 如果site参数为'file'，跳转到file.---.com
+                    if (site === 'file') {
+                        window.location.href = `https://file.---.com/${path}`;
+                    } else {
+                        // 其他site参数处理方式可以在此添加
+                    }
+                } else if (path) {
+                    // 没有site参数时，跳转到默认域名
+                    window.location.href = `https://---.com/${path}`;
                 } else {
-                    window.location.href = 'https://nicocat.cc';
+                    // 默认跳转
+                    window.location.href = 'https://---.com';
                 }
-            }, 1500); //等待资源加载
+            }, 1500); // 等待资源加载
         }
     </script>
 </head>
